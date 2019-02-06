@@ -12,3 +12,5 @@ function countLetters(str) {
 
     return out;
 }
+
+console.log(countLetters("lighthouse in the house"));
