@@ -3,10 +3,11 @@ function countLetters(str) {
     var out = {};
 
     for (var char in str) {
-        if (!out[char]) {
-            out[char] = 1;
-        } else {
-            out[char]++;
+        var text = str.charAt(char);
+        if (!out[text] && text !== ' ') {
+            out[text] = 1;
+        } else if (text !== ' ') {
+            out[text]++;
         }
     }
 
